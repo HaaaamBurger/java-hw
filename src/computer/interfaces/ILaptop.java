@@ -1,6 +1,8 @@
 package computer.interfaces;
 
 public interface ILaptop {
-    boolean highPerformance = true;
+    String battery_life = "12 hours";
+
+    public String getValues();
 
 }

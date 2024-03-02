@@ -4,26 +4,36 @@ import computer.enums.ESystem;
 import computer.abstractions.Product;
 import computer.interfaces.IComputer;
 
-import java.math.BigDecimal;
-
-
-public class Computer extends Product implements IComputer {
-    private String graphicCard;
+public class Computer extends Product implements IComputer { ;
     private short monitors;
 
-    public Computer(String title, BigDecimal price, String model, String brand, ESystem system) {
-        super(title, price, model, brand, system);
-    }
     public Computer(){};
 
-    public Computer graphicCard(String graphicCard) {
-        this.graphicCard = graphicCard;
+    protected Computer brand(String brand) {
+        super.brand = brand;
         return this;
     }
+    protected Computer system(ESystem system) {
+        super.system = system;
+        return this;
+    }
+    protected Computer model(String model) {
+        super.model = model;
+        return this;
+    }
+    protected Computer ram(String ram) {
+        super.ram = ram;
+        return this;
+    }
+
     public Computer monitors(short monitors) {
         this.monitors = monitors;
         return this;
     }
 
+    @Override
+    public String getValues() {
+        return "\nModel: " + this.model + "\nBrand: " + this.brand + "\nSystem: " + this.system + "\nMonitors: " + this.monitors;
+    }
 
 }
