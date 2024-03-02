@@ -9,19 +9,19 @@ public class Computer extends Product implements IComputer { ;
 
     public Computer(){};
 
-    protected Computer brand(String brand) {
+    public Computer brand(String brand) {
         super.brand = brand;
         return this;
     }
-    protected Computer system(ESystem system) {
+    public Computer system(ESystem system) {
         super.system = system;
         return this;
     }
-    protected Computer model(String model) {
+    public Computer model(String model) {
         super.model = model;
         return this;
     }
-    protected Computer ram(String ram) {
+    public Computer ram(int ram) {
         super.ram = ram;
         return this;
     }

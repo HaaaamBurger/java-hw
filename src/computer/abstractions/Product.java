@@ -6,28 +6,28 @@ public abstract class Product {
     protected String model;
     protected String brand;
     protected ESystem system;
-    protected String ram;
+    protected int ram;
 
-    protected Product(){};
+    public Product(){};
 
 
-    protected Product brand(String brand) {
+    public Product brand(String brand) {
         this.brand = brand;
         return this;
     }
-    protected Product system(ESystem system) {
+    public Product system(ESystem system) {
         this.system = system;
         return this;
     }
-    protected Product model(String model) {
+    public Product model(String model) {
         this.model = model;
         return this;
     }
-    protected Product ram(String ram) {
+    public Product ram(int ram) {
         this.ram = ram;
         return this;
     }
-    protected String getValues() {
+    public String getValues() {
         return "\nModel: " + this.model + "\nBrand: " + this.brand + "\nSystem: " + this.system;
     }
 }

@@ -6,24 +6,24 @@ import computer.interfaces.ILaptop;
 public class Laptop extends Computer implements ILaptop {
     private String battery_life;
 
-    protected Laptop battery_life(int battery_life) {
+    public Laptop battery_life(int battery_life) {
         this.battery_life = battery_life + "hours";
         return this;
     }
 
-    protected Laptop brand(String brand) {
+    public Laptop brand(String brand) {
         super.brand = brand;
         return this;
     }
-    protected Laptop system(ESystem system) {
+    public Laptop system(ESystem system) {
         super.system = system;
         return this;
     }
-    protected Laptop model(String model) {
+    public Laptop model(String model) {
         super.model = model;
         return this;
     }
-    protected Laptop ram(String ram) {
+    public Laptop ram(int ram) {
         super.ram = ram;
         return this;
     }
