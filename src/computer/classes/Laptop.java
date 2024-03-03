@@ -1,9 +1,8 @@
 package computer.classes;
 
 import computer.enums.ESystem;
-import computer.interfaces.ILaptop;
 
-public class Laptop extends Computer implements ILaptop {
+public class Laptop extends Computer {
     private String battery_life;
 
     public Laptop battery_life(int battery_life) {

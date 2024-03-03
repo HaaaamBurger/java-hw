@@ -1,11 +1,10 @@
 package paper.classes;
 
 import paper.abstractions.Papirus;
-import paper.interfaces.IBook;
 
 import java.util.ArrayList;
 
-public class Book extends Papirus implements IBook {
+public class Book extends Papirus{
     protected ArrayList<String> genres;
     public Book(){};
 

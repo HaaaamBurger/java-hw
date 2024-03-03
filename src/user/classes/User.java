@@ -2,8 +2,6 @@ package user.classes;
 
 import user.abstractions.Person;
 
-import java.util.ArrayList;
-
 public class User extends Person {
     private Address address;
     private Company company;

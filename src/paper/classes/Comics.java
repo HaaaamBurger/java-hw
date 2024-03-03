@@ -1,10 +1,8 @@
 package paper.classes;
 
-import paper.interfaces.IComics;
-
 import java.util.ArrayList;
 
-public class Comics extends Book implements IComics {
+public class Comics extends Book {
     private String illustrator;
 
     public Comics illustrator(String illustrator){

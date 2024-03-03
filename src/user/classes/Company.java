@@ -1,8 +1,6 @@
 package user.classes;
 
-import user.interfaces.ICompany;
-
-public class Company implements ICompany {
+public class Company {
     protected String name;
     protected String catchPhrase;
     protected String bs;

@@ -1,8 +1,6 @@
 package user.classes;
 
-import user.interfaces.IAddress;
-
-public class Address implements IAddress {
+public class Address{
     protected String street;
     protected String suite;
     protected String city;

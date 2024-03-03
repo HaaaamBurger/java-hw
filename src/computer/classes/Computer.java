@@ -2,9 +2,8 @@ package computer.classes;
 
 import computer.enums.ESystem;
 import computer.abstractions.Product;
-import computer.interfaces.IComputer;
 
-public class Computer extends Product implements IComputer { ;
+public class Computer extends Product { ;
     private short monitors;
 
     public Computer(){};

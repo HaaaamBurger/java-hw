@@ -1,10 +1,6 @@
 package paper.classes;
 
-import paper.interfaces.IMagazine;
-
-import java.util.ArrayList;
-
-public class Magazine extends Book implements IMagazine {
+public class Magazine extends Book {
     private String volume;
 
     public Magazine() {};

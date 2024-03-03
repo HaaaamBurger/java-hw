@@ -1,8 +1,6 @@
 package user.abstractions;
 
-import user.interfaces.IPerson;
-
-public abstract class Person implements IPerson {
+public abstract class Person {
     protected static int id;
     protected String name;
     protected String username;

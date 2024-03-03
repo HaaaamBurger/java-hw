@@ -1,8 +1,6 @@
 package paper.abstractions;
 
-import paper.interfaces.IPapirus;
-
-public abstract class Papirus implements IPapirus {
+public abstract class Papirus {
     protected String title = "Unknown";
     protected String author = "Unknown";
     protected int year = 0;

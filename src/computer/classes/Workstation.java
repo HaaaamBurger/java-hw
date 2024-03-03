@@ -1,9 +1,8 @@
 package computer.classes;
 
 import computer.enums.ESystem;
-import computer.interfaces.IWorkstation;
 
-public class Workstation extends Laptop implements IWorkstation {
+public class Workstation extends Laptop {
     private String gpu;
 
     public Workstation pgu(String gpu) {

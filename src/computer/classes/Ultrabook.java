@@ -1,9 +1,8 @@
 package computer.classes;
 
 import computer.enums.ESystem;
-import computer.interfaces.IUltrabook;
 
-public class Ultrabook extends Laptop implements IUltrabook {
+public class Ultrabook extends Laptop {
     private float weight;
 
     public Ultrabook weight(float weight) {

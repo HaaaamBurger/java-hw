@@ -1,7 +1,6 @@
 package user.classes;
-import user.interfaces.IGeo;
 
-public class Geo implements IGeo {
+public class Geo {
     protected String lat;
     protected String lng;
 
