@@ -23,7 +23,7 @@ public class Workstation extends Laptop implements IWorkstation {
         super.model = model;
         return this;
     }
-    public Workstation ram(String ram) {
+    public Workstation ram(int ram) {
         super.ram = ram;
         return this;
     }

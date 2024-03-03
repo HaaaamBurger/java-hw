@@ -23,7 +23,7 @@ public class Ultrabook extends Laptop implements IUltrabook {
         super.model = model;
         return this;
     }
-    public Ultrabook ram(String ram) {
+    public Ultrabook ram(int ram) {
         super.ram = ram;
         return this;
     }
