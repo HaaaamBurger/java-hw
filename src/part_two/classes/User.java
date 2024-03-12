@@ -52,4 +52,10 @@ public class User {
         this.car = car;
         return this;
     }
+    public EGender getGender() {
+        return this.gender;
+    }
+    public List<Skill> getSkillsCount() {
+        return this.skills;
+    }
 }
