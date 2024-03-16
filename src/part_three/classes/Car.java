@@ -18,6 +18,12 @@ public class Car {
     public void upgradePower(float percentage) {
         this.power += this.power * percentage;
     }
+    public Owner getOwner() {
+        return this.owner;
+    }
+    public float getPrice() {
+        return this.price;
+    }
     public void showCar() {
         System.out.println(
                 "--------------------" +
@@ -28,7 +34,6 @@ public class Car {
                             "\n\t\tname: " + this.owner.getName() +
                             "\n\t\tage: " + this.owner.getAge() +
                             "\n\t\texp: " + this.owner.getExp() +
-                            "\n\t\tisQualified: " + this.owner.getIsQualified() +
                         "\n\t}" +
                         "\nyear: " + this.year
         );

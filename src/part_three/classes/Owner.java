@@ -4,26 +4,25 @@ public class Owner {
     private String name;
     private short age;
     private short exp;
-    private boolean isQualified;
 
 
-    public Owner(String name, short age, short exp, boolean isQualified) {
+    public Owner(String name, short age, short exp) {
         this.name = name;
         this.age = age;
         this.exp = exp;
-        this.isQualified = isQualified;
     }
-    protected String getName() {
+
+    public void changeExp(short exp) {
+        this.exp = exp;
+    }
+    public String getName() {
         return this.name;
     }
-    protected short getAge() {
+    public short getAge() {
         return this.age;
     }
-    protected short getExp() {
+    public short getExp() {
         return this.exp;
-    }
-    protected boolean getIsQualified() {
-        return this.isQualified;
     }
 
 }
