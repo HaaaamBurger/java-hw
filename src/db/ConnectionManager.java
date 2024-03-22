@@ -20,6 +20,16 @@ public class ConnectionManager {
             throw new RuntimeException(e);
         }
     }
+    public static void createTable(String schema) {
+        try {
+            Statement statement = connection.createStatement();
+
+            statement.executeUpdate(schema);
+            System.out.println("The table successfully created!\n");
 
 
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
